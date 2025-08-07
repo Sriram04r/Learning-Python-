@@ -1,0 +1,406 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNcLBKVonH7rid6zqTevNEV",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sriram04r/Learning-Python-/blob/main/Day1%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# VARIABLES"
+      ],
+      "metadata": {
+        "id": "yttgm6AIIT2c"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Variables are nothing but containers of the values.variables are of str,int,float,bool."
+      ],
+      "metadata": {
+        "id": "sFfywaNtIa6m"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# strings\n",
+        "\n",
+        "\n",
+        "a = 'sriram'\n",
+        "b = 'charan'\n",
+        "\n",
+        "hello = f\"My friends are: {a, b}\"\n",
+        "print(a)\n",
+        "print(b)\n",
+        "\n",
+        "print(f\"The first person name is: {a}\")\n",
+        "print(f\"The second person name is: {b}\")\n",
+        "print(hello)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e8udtDpjItVx",
+        "outputId": "e0b2943d-df20-40f0-e6df-0de4736591a4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sriram\n",
+            "charan\n",
+            "The first person name is: sriram\n",
+            "The second person name is: charan\n",
+            "My friends are: ('sriram', 'charan')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# integer\n",
+        "\n",
+        "\n",
+        "age = 24\n",
+        "price = 250\n",
+        "print(f\"My age is :{age}\")\n",
+        "print(f\"The price of rice bag is:${price}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "g2Vc2lqHKHe7",
+        "outputId": "fc937270-9a36-4b52-d489-fbc5916da956"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My age is :24\n",
+            "The price of rice bag is:$250\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# float\n",
+        "\n",
+        "\n",
+        "gpa = 8.7\n",
+        "semister = 75.0\n",
+        "print(f\"My gpa marks are:{gpa}\")\n",
+        "print(f\"My semister marks are:{semister}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JVEPshQNK6m-",
+        "outputId": "cbc5f08e-e777-4d8e-d602-324a6bfbc8ee"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My gpa marks are:8.7\n",
+            "My semister marks are:75.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# b00lean\n",
+        "\n",
+        "\n",
+        "is_student = False\n",
+        "print(is_student)\n",
+        "\n",
+        "if is_student:\n",
+        "  print(f\"I am a student:{is_student}\")\n",
+        "else:print(f\"I am not a student:{is_student}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DhYutOCGLugq",
+        "outputId": "7a7c434d-4190-4472-def8-9d72f932e107"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "I am not a student:False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TYPE CASTING"
+      ],
+      "metadata": {
+        "id": "qHPJm-nsND1E"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We have convert one data type to another is known as type casting."
+      ],
+      "metadata": {
+        "id": "f4UXJdwVNGq2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = \"sriram\"\n",
+        "age = 20\n",
+        "float_var = 2.4\n",
+        "bool = True\n",
+        "\n",
+        "print(type(name))\n",
+        "print(type(bool))\n",
+        "print(type(\"20\"))\n",
+        "print(type(age))\n",
+        "age += 1\n",
+        "print(age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "78_32EV2NS4d",
+        "outputId": "74dddc63-36cd-4f1e-d1e4-d938573cc72d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n",
+            "<class 'bool'>\n",
+            "<class 'str'>\n",
+            "<class 'int'>\n",
+            "21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "INPUT FUNCTION"
+      ],
+      "metadata": {
+        "id": "8Z6yR__gOXCI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We have to take the user input the input( will be used."
+      ],
+      "metadata": {
+        "id": "b9dDXXbbObZ2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = input(\"Enter the string:\")\n",
+        "email = input(\"Enter your email:\")\n",
+        "print(f\"The name is:{name}\")\n",
+        "print(f\"My mail is:?{email}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V-6NqIRfOlMI",
+        "outputId": "40a0484b-6a65-4eba-f524-2c9c3d77189d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the string:sriram\n",
+            "Enter your email:sriramkola153@gmail.com\n",
+            "The name is:sriram\n",
+            "My mail is:?sriramkola153@gmail.com\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Exercise 1 Area of rectangle\n",
+        "\n",
+        "length = int(input(\"Enter a length:\"))\n",
+        "width = int(input(\"Enter a  value:\"))\n",
+        "area = length * width\n",
+        "print(f\"The area of rectangle is :{area}cm\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jXX9wORWPl05",
+        "outputId": "6e1e843b-c590-4d21-de3f-8c4c857e9d45"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a length:23\n",
+            "Enter a  value:4\n",
+            "The area of rectangle is :92cm\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Exercise 2 shopping cart program\n",
+        "\n",
+        "item = input(\"What do you like the item:\")\n",
+        "price = int(input(\"Enter the price:\"))\n",
+        "quality = input(\"The quality of the item is poor:\")\n",
+        "\n",
+        "print(f\"The item is good:{item}\")\n",
+        "print(f\"The price is high:${price}\")\n",
+        "print(f\"The quality is good:{quality}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GkloposKQ8iI",
+        "outputId": "acb5649b-85d7-4b17-bf15-6f5bd05ebc58"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What do you like the item:burger\n",
+            "Enter the price:25\n",
+            "The quality of the item is poor:yes\n",
+            "The item is good:burger\n",
+            "The price is high:$25\n",
+            "The quality is good:yes\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "MADLIBS GAME"
+      ],
+      "metadata": {
+        "id": "D1t3J2rGUbFy"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "It is like a game that is to create the the story using adj's,nouns and verbs etc.."
+      ],
+      "metadata": {
+        "id": "03wQOGlqUnWs"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "adjective1 = input(\"Enter an adjective(description):\")\n",
+        "noun1 = input(\"Enter a noun (name,place,thing):\")\n",
+        "adjective2  = input(\"Enter an adjective(description):\")\n",
+        "verb = input(\"Enter a verb ending with 'ing' :\")\n",
+        "adjective3  = input(\"Enter an adjective(description):\")\n",
+        "\n",
+        "print(f\"I went to a {adjective1} zoo.\")\n",
+        "print(f\"If an exihibit {noun1}.\")\n",
+        "print(f\"{noun1} was {adjective2} an {verb}\")\n",
+        "print(f\"I was  {adjective3}!\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pLNEgPurU2dt",
+        "outputId": "258226d2-ab41-4356-eb4f-7b4aa27b65fe"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter an adjective(description):suspicios\n",
+            "Enter a noun (name,place,thing):sriram\n",
+            "Enter an adjective(description):angry\n",
+            "Enter a verb ending with 'ing' :talking\n",
+            "Enter an adjective(description):happy\n",
+            "I went to a suspicios zoo.\n",
+            "If an exihibit sriram.\n",
+            "sriram was angry an talking\n",
+            "I was  happy!\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
