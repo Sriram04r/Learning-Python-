@@ -1,0 +1,903 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOeIAMD2DthFgGU2qdshIzn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sriram04r/Learning-Python-/blob/main/Day2%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# ARTHMETIC OPERATOR"
+      ],
+      "metadata": {
+        "id": "E6W9_TCwdE1O"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Arthmetic operators are of few types like add,sub,mul,div,mod,pow etc..Now we have to write program for these of perators."
+      ],
+      "metadata": {
+        "id": "14dwO0IKdPUD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# addition\n",
+        "\n",
+        "\n",
+        "a = 6\n",
+        "b = a + 5\n",
+        "print(b)\n",
+        "\n",
+        "a = 56\n",
+        "a += 7\n",
+        "print(a)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QDGTEEXIdiqz",
+        "outputId": "76c44fe3-9d4a-49b1-f2db-3362986e4f8a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "11\n",
+            "63\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# subtraction\n",
+        "\n",
+        "\n",
+        "a = 3\n",
+        "a = a - 4\n",
+        "print(a)\n",
+        "\n",
+        "a -= 43\n",
+        "print(a)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6iEFke1_d-0w",
+        "outputId": "1a494243-22f6-4c2e-a892-1a00d7d35d97"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-1\n",
+            "-44\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# multiplication\n",
+        "\n",
+        "a = 3\n",
+        "a *= 4\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9kRITf8wey5L",
+        "outputId": "012fe630-1c69-492a-853a-61106c1e7c54"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# division\n",
+        "\n",
+        "a = 34\n",
+        "a /= 17\n",
+        "print(a)\n",
+        "\n",
+        "a = 60\n",
+        "b = a / 5\n",
+        "print(b)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tIN4BLF2e-14",
+        "outputId": "e2ad822d-2b94-4953-e37d-1047f233f765"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2.0\n",
+            "12.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# modulus\n",
+        "\n",
+        "ask = 34\n",
+        "b = ask % 2\n",
+        "print(b)\n",
+        "\n",
+        "aski = 33\n",
+        "aski %= 11\n",
+        "print(aski)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JKTQ-AixfkoC",
+        "outputId": "ab160206-ed54-4ab9-d882-bbdb0e10b9ad"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# MATH FUNCTIONS"
+      ],
+      "metadata": {
+        "id": "vPApuwh1ey3H"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Math function are used to calculate the problems like we have to assign some values and define with specific conditions to solve the problems.There are some conditions like round,absolutes values,or powern functions ,or else to find max or min values."
+      ],
+      "metadata": {
+        "id": "jAMpHe69e4vQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**round**"
+      ],
+      "metadata": {
+        "id": "sl1U_-gdg-3g"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The round function is about to give the exact values if in case of any floating values"
+      ],
+      "metadata": {
+        "id": "lcDj7en3hEp7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 3.14\n",
+        "\n",
+        "\n",
+        "result = round(a)\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IeAiAlYnhBMx",
+        "outputId": "ca8cf184-1b27-45db-cd1b-67345ef490f7"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**absolute function**"
+      ],
+      "metadata": {
+        "id": "sP9js4sMhfQy"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "It gives the absolute values.There is an example for abs()."
+      ],
+      "metadata": {
+        "id": "C1NmI7y-htAQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ram = -7\n",
+        "result = (abs(ram))\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u-KKfZQ2h5NQ",
+        "outputId": "3e8ead9b-04c9-4891-fa07-a097dcefb6ed"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**power fun()**"
+      ],
+      "metadata": {
+        "id": "PYZer7cciOQm"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "power fun() is to give the exponential value."
+      ],
+      "metadata": {
+        "id": "P-a0bsQFiSmK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tab = pow(9 , 2)\n",
+        "print(tab)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N9aa2Doki1LB",
+        "outputId": "4472b6c6-8863-4135-cbbe-6d4089cce179"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "81\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**max() fun**"
+      ],
+      "metadata": {
+        "id": "JbCz79Kxjfve"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "it will find the maximum value of the given variables."
+      ],
+      "metadata": {
+        "id": "guA6XlVSjjSF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 34\n",
+        "y = 354\n",
+        "z = 999\n",
+        "\n",
+        "result = (max(x , y , z))\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TVomJGarjskC",
+        "outputId": "8dc3beca-3bdc-41bc-cf27-5ecf0d19eba2"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "999\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**min fun()**"
+      ],
+      "metadata": {
+        "id": "WGHdoe0fkR-V"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "It will find the minimum value."
+      ],
+      "metadata": {
+        "id": "YXJNj323kUzt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 34\n",
+        "y = 354\n",
+        "z = 999\n",
+        "\n",
+        "result = (min(x , y , z))\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pvGvkGEtkZgY",
+        "outputId": "7bf3c283-782f-4086-a35e-65f1c3d71653"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "34\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**We have to use math functions to find constant values like pi , e , sqrt,etc..**"
+      ],
+      "metadata": {
+        "id": "z-8wNGJMlPLL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "\n",
+        "x = math.pi\n",
+        "print(x)\n",
+        "\n",
+        "print(math.e)\n",
+        "\n",
+        "y = 100\n",
+        "result = math.sqrt(y)\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "piducOjgle6H",
+        "outputId": "1adb929f-6215-4c8f-d7e5-611cacdf31fa"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.141592653589793\n",
+            "2.718281828459045\n",
+            "10.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# find the radius of the circle using math fun()\n",
+        "#  Radius of the circle = 2πr\n",
+        "\n",
+        "\n",
+        "radius = float(input('Enter the radius value:'))\n",
+        "circumference = 2 * math.pi * radius\n",
+        "print(f'The circumference is:{round(circumference , 2)}cm')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "52uWJfoDysTl",
+        "outputId": "bc738c38-8caf-41b7-9f40-ef2d72eba8bf"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the radius value:4.7\n",
+            "The circumference is:29.53cm\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Find the area of circle\n",
+        "# area = π r²\n",
+        "\n",
+        "\n",
+        "radius = int(input('Enter the circle radius:'))\n",
+        "circumference = math.pi * pow(radius , 2)\n",
+        "print(f'The circumference is:{round(circumference ,3)}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jglwP-b50SCy",
+        "outputId": "c17b35b6-f9b1-490b-d312-edd8f24aee64"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the circle radius:2\n",
+            "The circumference is:12.566\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# find the hypotenuse of right angled triangle\n",
+        "\n",
+        "a = int(input('Enter a side A:'))\n",
+        "b = int(input('Enter a side B:'))\n",
+        "c = math.sqrt(pow(a , 2) + pow(b , 2) )\n",
+        "print(f'The c is :{c}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zBWdxzV116z4",
+        "outputId": "f1a93ae1-d4eb-436b-9a30-c09f509becb3"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a side A:3\n",
+            "Enter a side B:5\n",
+            "The c is :5.830951894845301\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# CONDITIONAL STATEMENTS"
+      ],
+      "metadata": {
+        "id": "76ecKpIDAWfu"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "In python there are mainly 4 types of conditional statements.They are if , else , elseif , nestedif."
+      ],
+      "metadata": {
+        "id": "TRIyU4wUAgpl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**IF** **statement**"
+      ],
+      "metadata": {
+        "id": "fvVAz9lCBBUo"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "If condition states that when a condition is true statement is executed.if condition is false statement is not executed.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "I7RA9aOOBHd-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input('Enter a value:'))\n",
+        "\n",
+        "if num > 1:\n",
+        "  print('Hi How are u')\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1gQD63WsBOOh",
+        "outputId": "556bcee3-fc44-4e25-f4ad-f5daa66843ac"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a value:3\n",
+            "Hi How are u\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input('Enter a value:'))\n",
+        "\n",
+        "if num < -1:\n",
+        "  print('Hi How are u')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dQllNdkuBs-k",
+        "outputId": "8e7f6873-d41e-4774-c1ea-cc163fab8493"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter a value:5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Else statement**"
+      ],
+      "metadata": {
+        "id": "xEG-5h4eB0SH"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "If a condition is true statement is executed.if condition is false else statement is executed.\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "p2ML4foUB6da"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = float(input('Enter a number:'))\n",
+        "\n",
+        "if a > 18:\n",
+        " print('You are eligible to vote')\n",
+        "else:\n",
+        "  print('You are not eligible to vote')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lpyPauZ4Cd7p",
+        "outputId": "699f1c00-407b-46dd-84e7-0fa235c373a5"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number:13\n",
+            "You are not eligible to vote\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Elif satetement**"
+      ],
+      "metadata": {
+        "id": "Y1ctHi3BDT4s"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "It states that when the if condition is false it will go to elif condition."
+      ],
+      "metadata": {
+        "id": "MsrLjqirDYly"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = int(input('Enter a value:'))\n",
+        "\n",
+        "if age < 13:\n",
+        "  print('you are a kid')\n",
+        "elif age <= 60:\n",
+        "  print('you are a youth person')\n",
+        "else:\n",
+        "  print('you are a old person')\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HJ6EMwgYDlJq",
+        "outputId": "0d7aead2-07b2-417d-98c1-8d2773852eb5"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a value:55\n",
+            "you are a youth person\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Nested if statement**"
+      ],
+      "metadata": {
+        "id": "Zn4vLdk0FCBR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Simply it's say that if inside if is called nested if."
+      ],
+      "metadata": {
+        "id": "fkmxmbaeFIDX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "result = int(input('Enter a value:'))\n",
+        "\n",
+        "if result > 90:\n",
+        " print(f'You are passed in good score:{result}')\n",
+        "if result <= 75:\n",
+        " print(f'You are passed in average score:{result}')\n",
+        "else:\n",
+        " print('You are failed')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HcHkku9_FQ68",
+        "outputId": "650dc2cd-747d-47b5-c8a2-3637abde314f"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a value:35\n",
+            "You are passed in average score:35\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# PYTHON CALCULATOR"
+      ],
+      "metadata": {
+        "id": "9DgG7MKJG7lO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "operator = input('Enter an operator(+ , - , * , /):')\n",
+        "num1 = float(input(\"Enter a number:\"))\n",
+        "num2 = float(input(\"Enter a number:\"))\n",
+        "print(num1 - num2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sYhze4HsHehT",
+        "outputId": "1a681ad8-c6bc-4959-d449-3432594adf19"
+      },
+      "execution_count": 63,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter an operator(+ , - , * , /):-\n",
+            "Enter a number:3\n",
+            "Enter a number:1\n",
+            "2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**calculator using conditional statements**"
+      ],
+      "metadata": {
+        "id": "SeDaUgfHIX_i"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "operator = input('Enter an operator(+ , - , * , /)')\n",
+        "num1 = int(input(\"Enter a number:\"))\n",
+        "num2 = int(input(\"Enter a number:\"))\n",
+        "\n",
+        "if operator == '+':\n",
+        "  print(num1 + num2)\n",
+        "elif operator == '-':\n",
+        "  print(num1 - num2)\n",
+        "elif operator == '*':\n",
+        "  print(num1 * num2)\n",
+        "elif operator == '/':\n",
+        "  print(num1 / num2)\n",
+        "else:\n",
+        " print('It is an invalid operator')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z2lYzE3lIhL7",
+        "outputId": "c42579ac-5c07-4c6b-cdfc-1b4813826dbd"
+      },
+      "execution_count": 65,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter an operator(+ , - , * , /)*\n",
+            "Enter a number:6\n",
+            "Enter a number:9\n",
+            "54\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
