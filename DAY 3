@@ -1,0 +1,614 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOhphyyNeO2x6GpHjAuEO7l",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sriram04r/Learning-Python-/blob/main/DAY%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# LOGICAL OPERATORS"
+      ],
+      "metadata": {
+        "id": "bRq8TgKvwZnz"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Mainly there are 3 typs of operators.They are                          \n",
+        "and operator                      \n",
+        "or operator                                 \n",
+        "not operator                             \n"
+      ],
+      "metadata": {
+        "id": "j1RH-yYQwfBJ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**AND operator**\n",
+        "\n",
+        "\n",
+        "Mainly and operator states that the given two are true it will satisfies."
+      ],
+      "metadata": {
+        "id": "cWLNvb07xGZE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 21\n",
+        "\n",
+        "is_rainy = True\n",
+        "\n",
+        "if age > 33 and is_rainy:\n",
+        "  print('it is rainy outside')\n",
+        "else:\n",
+        "  print('it is not rainy outside')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uzUN5yP5xh_F",
+        "outputId": "33350cbd-ff83-4e82-c107-7ec1c06c9def"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "it is not rainy outside\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 21\n",
+        "\n",
+        "is_rainy = True\n",
+        "\n",
+        "if age < 33 and is_rainy:\n",
+        "  print('it is rainy outside')\n",
+        "else:\n",
+        "  print('it is not rainy outside')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V5ecnSeMHbWL",
+        "outputId": "84d01f43-ba2d-4f8d-d37e-5d8c5b101a06"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "it is rainy outside\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**OR operator**                                      \n",
+        "In two conditions if condition is True the OR operator will executed."
+      ],
+      "metadata": {
+        "id": "CGaaHIDJHrqw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# age = 21\n",
+        "\n",
+        "is_rainy = False\n",
+        "\n",
+        "if age > 33 and is_rainy:\n",
+        "  print('it is rainy outside')\n",
+        "elif age < 19 or is_rainy:\n",
+        "  print('it is not rainy outside')\n",
+        "elif age < 22 or is_rainy:\n",
+        "    print('it is few rainy outside')\n",
+        "else:\n",
+        "  print('it is only clouds outside')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2slQC0AnHm3l",
+        "outputId": "d4896f00-76c5-4661-c54f-be7d8f971e4a"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "it is few rainy outside\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**NOT operator**                                         \n",
+        "Inverts the condition (not true , not false)"
+      ],
+      "metadata": {
+        "id": "XKgyCew8Ku1h"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "percentage = 95\n",
+        "grade = True\n",
+        "if percentage > 95 and grade :\n",
+        "  print('The students are studying Execellent')\n",
+        "elif percentage < 70 or  grade :\n",
+        "  print('The students are studing  poor')\n",
+        "elif percentage <= 95 or  not grade :\n",
+        "  print('The students are studying very good')\n",
+        "else:\n",
+        "  print('They are always absent')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aS6jCzybNfGE",
+        "outputId": "bd33f987-e707-4d51-a8bd-43e40ae3bc9d"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The students are studing  poor\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# CONDITIONAL EXPRESSION"
+      ],
+      "metadata": {
+        "id": "43jr_p32RPj2"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "A one line shortcut for if-else statement (ternary operator) , print or assign one of two values based on condition.X if condition Y."
+      ],
+      "metadata": {
+        "id": "Qpmq43oGRUz2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = 10\n",
+        "print('positive' if num == 10 else 'negative')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EAahjs5xRwcK",
+        "outputId": "93c7689f-aebd-4b93-e994-72c591fadaff"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "positive\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = 34\n",
+        "result = 'Even' if num % 2 == 0 else \"Odd\"\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LYhxCiG7SFva",
+        "outputId": "406bba26-234c-4b8e-a34b-6ab5e6c1d79d"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Even\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 7\n",
+        "b = 6\n",
+        "result = a if a < b else b\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-eTflm44ScN3",
+        "outputId": "3010bf50-fdd2-4bc4-decd-0426dc9bfa63"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 7\n",
+        "b = 6\n",
+        "result = a if a > b else b\n",
+        "print(result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J3YuE52qTGFn",
+        "outputId": "723888c7-e85d-40b3-edc5-55b26a645493"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 23\n",
+        "status = 'Adult' if age > 18 else 'child'\n",
+        "print(status)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m35pgXWZTcsa",
+        "outputId": "da816508-164a-4a77-8e4a-fa6341af10d4"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Adult\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = 23\n",
+        "status = 'Adult' if age < 18 else 'child'\n",
+        "print(status)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NmloO56hTr2U",
+        "outputId": "04f837c6-3460-4bcc-8b1f-6622f755e00f"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "child\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# STRINGS"
+      ],
+      "metadata": {
+        "id": "J397IXOmYNzm"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "A string is a collection of characters there are few types of string methods are there."
+      ],
+      "metadata": {
+        "id": "rYexFepdYRZo"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# length of a string\n",
+        "\n",
+        "str = 'sriram'\n",
+        "print(len(str))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MxlFFuavYiHK",
+        "outputId": "991309dd-c237-4c32-9fcf-b9e57d4a1907"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# find a string\n",
+        "\n",
+        "string = input('Enter your name :')\n",
+        "result = string.find('r')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dQ_0CVZEYvCL",
+        "outputId": "265392a2-133b-40c7-8ca7-8238afac58b5"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter your name :sriram\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# upper string\n",
+        "\n",
+        "name = 'Ravi'\n",
+        "name2 = name.upper()\n",
+        "print(name2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B-_Vi5wJZ6PB",
+        "outputId": "922abbb0-430d-43b3-cb13-204461a95089"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "RAVI\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# lower string\n",
+        "\n",
+        "str = 'LUCKY'\n",
+        "amp = str.lower()\n",
+        "print(amp)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oeG7mUb3aOht",
+        "outputId": "3d53cf3a-6dc7-4e44-a21a-9e172a50254e"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "lucky\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# is digit or not\n",
+        "\n",
+        "name = input('Enter a name:')\n",
+        "name2 = name.isdigit()\n",
+        "print(name2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gdXFTjwFatFL",
+        "outputId": "7a72819a-4ec1-499f-b003-ffaa0251cfd8"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a name:sriram\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# isdigit or not\n",
+        "\n",
+        "str = input('Enter a name:')\n",
+        "str2 = str.isdigit()\n",
+        "print(str2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tSq0XgdQbVcW",
+        "outputId": "90eb9bee-7179-4077-e517-43d0193d5d20"
+      },
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a name:111\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# count\n",
+        "\n",
+        "name = 'sriram'\n",
+        "name.count('r')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dz6racPhcbZM",
+        "outputId": "4dde340c-97e8-40dd-c7f8-27711fcb00fa"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 51
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# replace()\n",
+        "\n",
+        "str = 'sri ram'\n",
+        "str4 = str.replace('s','S')\n",
+        "print(str4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SU0ZSqfYcsjV",
+        "outputId": "03abbf85-f4fd-431d-d114-ea0432e4d828"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sri ram\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
