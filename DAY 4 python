@@ -1,0 +1,242 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNjCuSkq/XR7uytb5mQNiDa",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sriram04r/Learning-Python-/blob/main/DAY%204%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# INDEXING"
+      ],
+      "metadata": {
+        "id": "9YCl7-dwuCaz"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Access elements of a sequence using [] (Indexing operator)  [start , end , step]"
+      ],
+      "metadata": {
+        "id": "J_cGznhruG5e"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = input('Enter your mobile number:')\n",
+        "print(a[4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "94vyR-i8ufNG",
+        "outputId": "55931066-891c-4650-934e-62cdbe17bcee"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your mobile number:9666394628\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mobile = '9666394628'\n",
+        "print(mobile[3])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hWYFkZfVwhnJ",
+        "outputId": "87ef9c2c-d207-41c2-f726-1827339bcd15"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name = 'sriram'\n",
+        "print(name[0:3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NYUoQfmywwyh",
+        "outputId": "3b1c0faf-ca64-4931-b3a1-a7133dcde7cb"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sri\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hello = 'hi my name is raju'\n",
+        "print(hello[3:])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jCTYBUsLxAcc",
+        "outputId": "432e503e-c551-4f14-ca1d-2285552f9d07"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "my name is raju\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "aadhar = '4136-1432-6391'\n",
+        "print(aadhar[::3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "q-1kFPeTxN_F",
+        "outputId": "a1829116-c1b8-4ced-b233-f1e133c9fc0b"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "464-9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "section = 'csm dayscholars'\n",
+        "print(section[-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2qxm3E-nxuIj",
+        "outputId": "f218195a-2c62-4193-c910-17488c91d057"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "s\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "creditcard_no = '1212-3234-4567-4421'\n",
+        "middle_digit = creditcard_no[-9:-5]\n",
+        "print(f'xxxx-xxxx-{middle_digit}-xxxx')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "URk_ALHYyjKP",
+        "outputId": "5853dbe3-0fb7-44ac-eb3e-1e301be28c3e"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "xxxx-xxxx-4567-xxxx\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mobile_no = '8264936669'\n",
+        "print(mobile_no[::-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eHPHeSPgzcOh",
+        "outputId": "53e108fe-b749-4d4f-cd15-b2a9b9d0570b"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9666394628\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
