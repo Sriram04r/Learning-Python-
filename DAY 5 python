@@ -1,0 +1,262 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN3yAlh9YopK6GmTlOrnBfe",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sriram04r/Learning-Python-/blob/main/DAY%205%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Time method"
+      ],
+      "metadata": {
+        "id": "coGaAd3xRQGl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We can import time method to execute the code in fixed time."
+      ],
+      "metadata": {
+        "id": "1LROJJcFRagt"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import time\n",
+        "\n",
+        "time.sleep(4)\n",
+        "print('Hello')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3j0UvX7CRs7N",
+        "outputId": "e5c7eea3-135e-4444-9da0-91486fe18b3a"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "77c6580d",
+        "outputId": "e0945e57-7ea3-4dba-b5b8-39f0b2ee7e0c"
+      },
+      "source": [
+        "import time\n",
+        "\n",
+        "a = 12\n",
+        "time.sleep(a)\n",
+        "print('Hello')"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hi = int(input('Enter a value:'))\n",
+        "for i in range(0,hi):\n",
+        " time.sleep(1)\n",
+        "print(\"Hello\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zV7g4YKUS7A-",
+        "outputId": "5d125c72-879b-442c-e77d-b78ae7a4edce"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a value:2\n",
+            "Hello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hello = int(input('Enter a value:'))\n",
+        "for i in range(0,hello):\n",
+        "  print(i)\n",
+        "time.sleep(1)\n",
+        "print(\"Hello\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XZ5K41A0Vqjj",
+        "outputId": "c265c833-5559-4aec-dba8-a3b0303f6466"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a value:1\n",
+            "0\n",
+            "Hello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = int(input(\"Enter your age:\"))\n",
+        "\n",
+        "for i in range(15,age):\n",
+        "  print(i)\n",
+        "  time.sleep(3)\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1N9HiVQwWD6i",
+        "outputId": "ef0c37fb-672a-4b5f-ce4b-500a6a0516a9"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your age:21\n",
+            "15\n",
+            "16\n",
+            "17\n",
+            "18\n",
+            "19\n",
+            "20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = int(input(\"Enter your age:\"))\n",
+        "\n",
+        "for i in reversed(range(15,age)):\n",
+        "  print(i)\n",
+        "  time.sleep(3)\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8b6X_7UmV3up",
+        "outputId": "82388fc0-1b38-4e9a-8213-91438cbdfc6e"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your age:23\n",
+            "22\n",
+            "21\n",
+            "20\n",
+            "19\n",
+            "18\n",
+            "17\n",
+            "16\n",
+            "15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_time = int(input(\"Enter your age:\"))\n",
+        "\n",
+        "for i in range(15,my_time):\n",
+        "  seconds = i % 60\n",
+        "  print(f'00:00:{seconds}')\n",
+        "  time.sleep(1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hQOmI4fHZFNa",
+        "outputId": "f4f0576c-4173-4d4a-a46d-c73d6ec1b22b"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your age:22\n",
+            "00:00:21\n",
+            "00:00:20\n",
+            "00:00:19\n",
+            "00:00:18\n",
+            "00:00:17\n",
+            "00:00:16\n",
+            "00:00:15\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
